@@ -1,0 +1,209 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' : '../css/reveal/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+</head>
+<body>
+<img src="https://ptteng.github.io/PPT/img/demo/logo.png" alt="" usemap="#pttmap" class="base-logo">
+<map name="pttmap">
+    <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com" alt="" target="_blank"/>
+</map>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>如何调研个人中心</h2>
+			<p></p>
+            <h3>pm小课堂</h3>
+            <p>分享人：杨腾东</p>
+        </section>
+        <section>
+            <p>1.背景介绍</p>
+            <p>2.知识剖析</p>
+            <p>3.常见问题</p>
+            <p>4.解决方案</p>
+            <p>5.编码实战</p>
+            <p>6.扩展思考</p>
+            <p>7.参考文献</p>
+            <p>8.更多讨论</p>
+        </section>
+        <section>
+            <h3>1.背景介绍</h3>
+        </section>
+        <section> 
+            <h5>个人中心介绍</h5>
+            <p>产品的个人中心模块是存在账户体系的产品内部对该账户的个人信息及其相关功能服务的展示。好比是用户的自我介绍。
+             </p>
+            <p>作用：展示个人信息及其相关的功能服务入口。
+            </p>
+            <p>具体包含的内容：头像、昵称、用户名、背景、手机号、邮箱号、个性签名等
+            </p>
+        </section>
+        
+        <section>
+            <h3>2.知识剖析</h3>
+        </section>
+
+        <section>
+            <h5>调研个人中心步骤</h5>
+
+				<p>1、明确调研的模块</p>
+                <p>2、有针对性的对各模块进行调研</p>
+                <p>3、总结出各模块主流设计方式</p>
+            
+
+                </section>
+
+                <section>
+            <h5>具体操作</h5>
+
+                <p>1、粗略的浏览多个网站或者app的个人中心，边看边对比，找出其通用部分</p>
+                <p>2、例如头像模块，调研各种主流站点的个人中心的头像设计方式，有圆形、方形，还要考虑头像裁剪设计等</p>
+                <p>3、整理第二步调研的内容，拿出调研结论：设计方式及其适用场景、优缺点、案例等</p>
+
+
+            
+                </section>
+
+                <section>
+            <p>通用部分：</p>
+            <p>头像、昵称、背景、手机号改绑、功能服务展示形式</p>
+        
+        </section>
+
+
+           
+         <section>
+            <h3>3.常见问题</h3>
+        </section>
+
+        <section>
+            <p>1.昵称和用户名是什么样的关系，为什么用户名不能更改?</p>
+            <p>2.个人中心和个人主页的区别和联系?</p>
+        
+        </section>
+
+
+        <section>
+            <h3>4.解决方案</h3>
+        </section>
+
+        <section>
+            <p>1.昵称和用户名是什么样的关系，为什么用户名不能更改?</p>
+            <p>1.昵称设计的作用其实是对于用户来说的，很简单，就是满足用户个性化需求，便于记忆等；昵称的修改是没有特别大的成本的，昵称只是一个数据表普通字段（对同一类事物的概括称呼），一般都是可以随便修改的，但是考虑到便于站方管理和网络安全，现在开始对昵称修改进行条件限制，时间、金钱等，反正就是提高更改昵称的门槛，过滤掉一大批用户，其实，另一方面也是用户需求导致的利益市场。</p> 
+        </section>
+
+
+<section>
+    <p>1.昵称和用户名是什么样的关系，为什么用户名不能更改?</p>
+            <p>用户名尽管是属于用户的属性，但现在大多时候是对于数据库来说的，或者对于开发来说的，用户名是用户身份的唯一识别，在数据库中，用户名是被当做主键或者外键进行和其他业务数据表进行关联的，也就是这个字段关联了很多的表格，各个表格之间靠用户名为标识来进行关联的，如果修改一个地方的用户名，那么它所关联的所有的数据表都要进行修改，不然bug会直线上升，但是这个工作量和成本真的太高，只要系统能正常运行，也就懒得改了，所以才产生了昵称来满足用户的个性化需求。</p>
+            </section>
+
+
+<section>
+<p>2.个人中心和个人主页的区别和联系?</p>
+            <p>2.个人中心和个人主页的区别在移动端和社交类产品中比较明显，个人中心偏向于给用户自己浏览和使用的一个界面，展示的都是本身信息（包括隐私信息、如手机号等）及其修改的入口，而个人主页多是给其他用户浏览的，展示的是可共享的一些关于用户自身的一些信息，比如说说、动态什么的。</p>
+
+        </section>
+
+
+        
+        <section>
+            <h3>5.编码实战</h3>
+        </section>
+        
+        <section>
+            <h3>6.扩展思考</h3>
+        </section>
+
+        <section>
+
+            <p>修改登录手机号，那可以看做是用户名可以修改吗？</p>
+
+            <p>1、用户名、手机号、邮箱都支持填在“用户名”一栏中结合密码登录，这只是一个技术升级，本质上手机号和邮箱只是关联用户名间接完成了登录，真正登录的仍然是用户名；</p>
+
+        <p> 2、汉字作为用户名容易引起乱码，因此用户名一般也不允许有中文，有时候注册，站方只提供给你编辑昵称或者手机号作为用户名，那其实是伪用户名，在数据库表格中，系统会自动给你分配一个非中文的，一般是数字或者字母的用户名，或者身份ID，用这个来作为你的身份识别。</p>
+        </section>
+
+
+
+        <section>
+            <h3>7.参考文献</h3>
+            <p>https://www.zhihu.com/question/31982814</p>
+
+          
+        </section>
+
+
+        <section>
+            <h3>8.更多讨论</h3>
+
+        </section>
+
+
+        <section>
+            <h4>鸣谢</h4>
+            <p>感谢观看,如有出错,恳请指正</p>
+            <p><small>BY : 杨腾东</small></p>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+<script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+
+<script>
+
+    // 以下为常见配置属性的默认值
+    // {
+    // 	controls: true, // 是否在右下角展示控制条
+    // 	progress: true, // 是否显示演示的进度条
+    // 	slideNumber: false, // 是否显示当前幻灯片的页数编号，也可以使用代码slideNumber: 'c / t' ，表示当前页/总页数。
+    // 	history: false, // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+    // 	keyboard: true, // 是否启用键盘快捷键来导航
+    // 	overview: true, // 是否启用幻灯片的概览模式，可使用"Esc"或"o"键来切换概览模式
+    // 	center: true, // 是否将幻灯片垂直居中
+    // 	touch: true, // 是否在触屏设备上启用触摸滑动切换
+    // 	loop: false, // 是否循环演示
+    // 	rtl: false, // 是否将演示的方向变成RTL，即从右往左
+    // 	fragments: true, // 全局开启和关闭碎片。
+    // 	autoSlide: 0, // 两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+    // 	transition: 'default', // 切换过渡效果，有none/fade/slide/convex/concave/zoom
+    // 	transitionSpeed: 'default', // 过渡速度，default/fast/slow
+    // 	mouseWheel: true, //是否启用通过鼠标滚轮来切换幻灯片
+    // }
+
+    // 初始化幻灯片
+    Reveal.initialize({
+        history: true,
+        dependencies: [
+            { src: 'https://ptteng.github.io/PPT/plugin/markdown/marked.js' },
+            { src: 'https://ptteng.github.io/PPT/plugin/markdown/markdown.js' },
+            { src: 'https://ptteng.github.io/PPT/plugin/notes/notes.js', async: true },
+            { src: 'https://ptteng.github.io/PPT/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+</script>
+</body>
+</html>
